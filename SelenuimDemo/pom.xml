@@ -7,6 +7,19 @@
     <groupId>com.seletest.demo</groupId>
     <artifactId>SelenuimDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
+    <dependencies>
+        <!-- 加载selenium包 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <!-- 与 selenium-java 版本要一致-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    </dependencies>
 </project>
