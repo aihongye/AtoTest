@@ -27,6 +27,10 @@ public class Demo2 {
         //获取输入框的某个属性值，并打印
         String sss=driver.findElement(By.name("email")).getAttribute("placeholder");
         System.out.println(sss);
+        //关闭网页
+        driver.close();
+        //退出浏览器驱动
+        driver.quit();
     }
     public static void main (String[] args){
         Demo2 demo2 =new Demo2();

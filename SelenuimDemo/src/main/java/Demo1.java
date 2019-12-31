@@ -37,6 +37,9 @@ public class Demo1 {
         WebElement element = webdriver.findElement(By.className("nav-item"));
         List<WebElement> elements= element.findElements(By.tagName("li"));
         elements.get(2).click();
-
+        //关闭网页
+        webdriver.close();
+        //退出浏览器驱动
+        webdriver.quit();
     }
 }
