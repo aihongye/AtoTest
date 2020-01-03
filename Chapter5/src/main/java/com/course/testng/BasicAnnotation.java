@@ -6,13 +6,10 @@ import org.testng.annotations.*;
 public class BasicAnnotation {
     //最基本的注解，用来把方法标记成测试的一部分
     @Test
-    public void testCase1()
-    {
-        System.out.println("这是测试用例1");
-    }
+    public void testCase1(){System.out.println("这是测试用例步骤1");}
     @Test
     public void testCase2(){
-        System.out.println("这是测试用例2");
+        System.out.println("这是测试用例步骤2");
     }
     @BeforeMethod
     public void beforeMethod(){
@@ -24,12 +21,10 @@ public class BasicAnnotation {
     }
     @BeforeClass
     public void beforeClass(){
-        System.out.println("beforeClass这是在类运行之前运行");
+        System.out.println("beforeClass这是测试用例的预置条件");
     }
     @AfterClass
-    public void afterClass(){
-        System.out.println("afterClass这是在类运行之后运行");
-    }
+    public void afterClass(){ System.out.println("afterClass这是测试用例的预期结果");}
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("beforeSuite这是测试套件之前运行的方法");

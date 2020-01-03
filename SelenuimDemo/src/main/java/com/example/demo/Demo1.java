@@ -27,9 +27,16 @@ public class Demo1 {
         //webdriver.findElement(By.partialLinkText("登录")).click();//没有成功定位
         //webdriver.findElement(By.name("password")).sendKeys("aihongye99");//没有成功定位
         //点击“注册”页卡
-        //webdriver.findElement(By.className("xa-showSignup")).click();
-        //点击“登录”页卡
         //webdriver.findElement(By.className("active-title")).click();
+        //webdriver.findElement(By.xpath("//*[@id=\"signin\"]/div[1]/h1/span[2]"));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //点击“登录”页卡
+        //webdriver.findElement(By.className("xa-showSignin")).click();
+        //webdriver.findElement(By.xpath("//*[@id=\"signin\"]/div[1]/h1/span[1]/text()"));
 
         webdriver.findElement(By.className("moco-btn-red")).click();
         webdriver.manage().window().maximize();
