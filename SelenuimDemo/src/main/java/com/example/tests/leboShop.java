@@ -12,6 +12,7 @@ public class leboShop {
         String driver = "webdriver.chrome.driver";
         System.setProperty(driver, driverLoc);
         webdriver = new ChromeDriver();
+        //乐搏商城首页
         webdriver.get("http://demo.shenzhuo.vip:21448/iwebshop/");
         try {
             Thread.sleep(3000);
