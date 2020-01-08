@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * 打开慕课网首页，点击各个元素。整体练习
+ * 练习多个li的取值
  */
 public class Demo1 {
     public  static void  main(String[]args) {
